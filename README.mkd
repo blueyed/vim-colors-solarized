@@ -13,6 +13,11 @@ Solarized Colorscheme for Vim
 
 Developed by Ethan Schoonover <es@ethanschoonover.com>
 
+Adapted for [Base16](https://github.com/chriskempson/base16)'s color layout by
+[@cuviper](https://github.com/cuviper).  To use this, make sure to first setup
+[Base16 Shell](https://github.com/chriskempson/base16-shell), then in `.vimrc`
+add `let g:solarized_base16=1` before `colorscheme solarized`.
+
 Visit the [Solarized homepage]
 ------------------------------
 

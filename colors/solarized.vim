@@ -215,6 +215,7 @@ call s:SetOption("degrade",0)
 call s:SetOption("bold",1)
 call s:SetOption("underline",1)
 call s:SetOption("italic",1) " note that we need to override this later if the terminal doesn't support
+call s:SetOption("base16",0)
 call s:SetOption("termcolors",16)
 call s:SetOption("contrast","normal")
 call s:SetOption("visibility","normal")
@@ -280,6 +281,24 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
     let s:blue        = "#0087ff"
     let s:cyan        = "#00afaf"
     let s:green       = "#5f8700"
+elseif g:solarized_base16 && &t_Co >= 16
+    let s:vmode       = "cterm" " Base16 mapping:
+    let s:base03      = "0"     " Base 00
+    let s:base02      = "18"    " Base 01
+    let s:base01      = "19"    " Base 02
+    let s:base00      = "8"     " Base 03
+    let s:base0       = "20"    " Base 04
+    let s:base1       = "7"     " Base 05
+    let s:base2       = "21"    " Base 06
+    let s:base3       = "15"    " Base 07
+    let s:yellow      = "3"     " Base 0A
+    let s:orange      = "16"    " Base 09
+    let s:red         = "1"     " Base 08
+    let s:magenta     = "17"    " Base 0F
+    let s:violet      = "5"     " Base 0E
+    let s:blue        = "4"     " Base 0D
+    let s:cyan        = "6"     " Base 0C
+    let s:green       = "2"     " Base 0B
 elseif g:solarized_termcolors != 256 && &t_Co >= 16
     let s:vmode       = "cterm"
     let s:base03      = "8"
