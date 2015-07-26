@@ -727,7 +727,7 @@ exe "hi! helpVim"           .s:fmt_none    .s:fg_magenta.s:bg_none
 exe "hi! helpHyperTextJump" .s:fmt_undr    .s:fg_blue   .s:bg_none
 exe "hi! helpHyperTextEntry".s:fmt_none    .s:fg_green  .s:bg_none
 exe "hi! vimIsCommand"      .s:fmt_none    .s:fg_base00 .s:bg_none
-exe "hi! vimSynMtchOpt"     .s:fmt_none    .s:fg_yellow .s:bg_none
+exe "hi! vimSynOption"      .s:fmt_none    .s:fg_yellow .s:bg_none
 exe "hi! vimSynType"        .s:fmt_none    .s:fg_cyan   .s:bg_none
 exe "hi! vimHiLink"         .s:fmt_none    .s:fg_blue   .s:bg_none
 exe "hi! vimHiGroup"        .s:fmt_none    .s:fg_blue   .s:bg_none
